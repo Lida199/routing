@@ -1,0 +1,18 @@
+<div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>USERNAME</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>ABOUT</th>
+        </tr>
+        <tr *ngFor="let detail of details">
+            <td>{{detail.id}}</td>
+            <td>{{detail.username}}</td>
+            <td>{{detail.firstName}}</td>
+            <td>{{detail.lastName}}</td>
+            <td>{{detail.aboutMe}}</td>
+        </tr>
+    </table>
+</div>
