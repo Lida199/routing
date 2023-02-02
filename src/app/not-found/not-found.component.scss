@@ -1,20 +1,9 @@
-table {
-    width: 90%;
-    margin-inline: auto;
+h3{
+    text-align: center;
     margin-top: 150px;
-    border-collapse: collapse;
-    font-size: 1.3rem;
+    font-size: 3rem;
 }
 
-td, th {
-    border: 1px solid rgb(195, 157, 231);
-    text-align: left;
-    padding: 10px;
-}
-
-tr:nth-child(even) {
-    background-color: rgb(195, 157, 231);
-}
 button {
     background-color: rgb(159, 71, 241);
     border: none;

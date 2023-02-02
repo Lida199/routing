@@ -1,4 +1,4 @@
-<div>
+<ng-container *ngIf="selectedUser; else noUser">
     <table>
         <tr>
             <th>ID</th>
@@ -7,12 +7,16 @@
             <th>LAST NAME</th>
             <th>ABOUT</th>
         </tr>
-        <tr *ngFor="let detail of details">
-            <td>{{detail.id}}</td>
-            <td>{{detail.username}}</td>
-            <td>{{detail.firstName}}</td>
-            <td>{{detail.lastName}}</td>
-            <td>{{detail.aboutMe}}</td>
+        <tr>
+            <td>{{selectedUser.id}}</td>
+            <td>{{selectedUser.username}}</td>
+            <td>{{selectedUser.firstName}}</td>
+            <td>{{selectedUser.lastName}}</td>
+            <td>{{selectedUser.aboutMe}}</td>
         </tr>
     </table>
-</div>
+    <button routerLink="">Back to the homepage!</button>
+</ng-container>
+<ng-template #noUser>
+    <app-not-found></app-not-found>
+</ng-template>

@@ -1,7 +1,7 @@
 table {
-    width: 50%;
-    margin-left: 50px;
-    margin-top: 50px;
+    width:40%;
+    margin-inline: auto;
+    margin-top: 150px;
     border-collapse: collapse;
     font-size: 1.3rem;
 }
@@ -10,6 +10,10 @@ td, th {
     border: 1px solid rgb(195, 157, 231);
     text-align: left;
     padding: 10px;
+}
+
+td{
+    cursor: pointer;
 }
 
 tr:nth-child(even) {
